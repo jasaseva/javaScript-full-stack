@@ -80,4 +80,7 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+  #img-bac {background-image: url("https://pur.vamtam.com/wp-content/uploads/2017/11/parallax4.jpg")}
+  #img-detail {background-image: url("https://pur.vamtam.com/wp-content/uploads/2017/12/pic6.jpg")}
 }
