@@ -1,10 +1,13 @@
-<div id="img-detail">
+<div id="img-detail" align = "center">
   <h4>Descripción:</h4>
   <p>
     {{vm.descripcionSeleccionada.description}}
   </p>
   <h4>Costo:</h4>
   <p>
-    {{vm.descripcionSeleccionada.cost}}
+    {{vm.descripcionSeleccionada.cost | currencyFormat}}
   </p>
+  <br />
+  <button ui-sref="home.book({ id:vm.descripcionSeleccionada.id  })" type="submit" class="btn btn-primary">Book</button>
+
 </div>

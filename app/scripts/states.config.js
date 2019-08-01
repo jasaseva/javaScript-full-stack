@@ -31,10 +31,18 @@ function settings($stateProvider, $urlRouterProvider) {
         controller: 'DetailserviceCtrl as vm'
     }
 
+    var bookServiceState = {
+        name: 'home.book',
+        url: '/book/{id}',
+        templateUrl: 'views/book.html',
+        controller: 'BookCtrl as vm'
+    }
+
     $stateProvider.state(homeState);
     $stateProvider.state(mainState);
     $stateProvider.state(aboutState);
     $stateProvider.state(detailServiceState);
+    $stateProvider.state(bookServiceState);
 
     $urlRouterProvider.when('','/');
 }

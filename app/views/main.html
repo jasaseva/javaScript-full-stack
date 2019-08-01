@@ -1,26 +1,29 @@
 <div id="img-bac" class="jumbotron">
   <h1>Cero estres</h1>
-  <p class="lead">
+  <!--<p class="lead">
     npHAPPY<br>
     Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+  </p>-->
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Spa es Salud!<span class="glyphicon glyphicon-ok"></span></a></p>
+  
+ <!-- <select ng-model="vm.idSeleccionado" ng-change="vm.getDescripcion" >
+      <option ng-value="item.id" ng-repeat="item in vm.allServices">
+        <a ui-sref="home.detailService">{{item.name}}</a>
+        //<a ui-sref="home.detailService({ id:item.id })">{{item.name}}</a>//
+      </option>
+    </select>-->
+    
+  
+    <p ng-repeat="item in vm.allServices" style="background-color: white"><a ui-sref="home.detailService({ id:item.id })">{{item.name}}</a></p>
+  
 </div>
 
 <div style="background-image: url('https://pur.vamtam.com/wp-content/uploads/2017/11/logo-spa-theme-white.svg')">
-  <h4>Mi nombre es:</h4>
+  <!-- <h4>Mi nombre es:</h4>
   <p>
     {{vm.myNombre}}
-  </p>
+  </p>-->
 
-  <h4>Resultado</h4>
-  <select ng-model="vm.idSeleccionado" ng-change="vm.getDescripcion">
-    <option ng-value="item.id" ng-repeat="item in vm.allServices">
-      <a ui-sref="home.detailService">{{item.name}}</a>
-    </option>
-  </select>
-
-  <p ng-repeat="item in vm.allServices"><a ui-sref="home.detailService({ id:item.id })">{{item.name}}</a></p>
-
+ 
 
 </div>
