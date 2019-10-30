@@ -41,6 +41,6 @@
     "test": "karma start test\\karma.conf.js"
   },
   "dependencies": {
-    "sequelize": "^5.10.1"
+    "sequelize": "^5.15.1"
   }
 }
